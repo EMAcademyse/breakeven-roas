@@ -7,7 +7,26 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="root"></div>
-  <script src="main.js"></script>
+  <div class="container">
+    <h2>Breakeven ROAS Calculator</h2>
+    <p>Enter your product's selling price and cost of goods (including shipping) to see your breakeven ROAS.</p>
+
+    <label>Selling Price ($)
+      <input type="number" id="price" />
+    </label>
+
+    <label>Cost of Goods (COG) incl. Shipping ($)
+      <input type="number" id="cost" />
+    </label>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div class="result">
+      <p><strong>Breakeven ROAS:</strong> <span id="roas"></span></p>
+      <p id="feedback"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
